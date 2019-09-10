@@ -15,7 +15,9 @@ input, textarea
 		border-color: red
 	&:required:valid
 		border-color: green
-
+.flex_row
+	display: flex
+	align-items: center
 body
 	font-size: 16px
 	min-width: 320px
@@ -24,11 +26,18 @@ body
 	font-family: 'Roboto', sans-serif
 	overflow-x: hidden
 	color: $text
-
+ul
+	list-style: none
+	padding: 0
+	margin: 0
+a
+	text-decoration: none
+	display: inline-block
+	color: inherit
 // Custom Sass / Remove before use
 
 .container
-	max-width: 700px
+	max-width: 1170px
 	padding:
 		right: $gutter/2
 		left: $gutter/2
@@ -41,22 +50,69 @@ body
 	max-width: 100%
 	height: auto
 
-.example-grid
-	display: grid
-	grid-gap: $gutter
-	grid-template-columns: 1fr 1fr
-	grid-template-areas: "left right"
-	> div:first-child
-		grid-area: left
-	> div:last-child
-		grid-area: right
-	+media-breakpoint-down(xs)
-		display: block
-		> div
-			padding: $gutter/2 0
-	
-.example-img
-	width: 100%
-
 .parent // Lazy Load Placeholder Generator: https://webdesign-master.ru/services/lazy/
 	background-image: url(data:image/gif;base64,R0lGODlhCgAIAIABAN3d3f///yH5BAEAAAEALAAAAAAKAAgAAAINjAOnyJv2oJOrVXrzKQA7)
+
+.header
+	background-color: #222
+	padding: 10px 0
+.header_line
+	justify-content: space-between
+	width: 100%
+.logo_wrapper
+	width: 150px
+	display: inline-block
+	img
+		width: 100%
+.nav
+	text-align: center
+	font-size: 16px
+	line-height: 24px
+	color: #fff
+	ul
+		display: flex
+		align-items: center
+		li
+			line-height: 1
+			&:last-child
+				a
+					margin-right: 0
+		a
+			text-decoration: none
+			margin-right: 35px
+			position: relative
+			overflow: hidden
+			padding-bottom: 3px
+			line-height: 1
+			&:after
+				content: ''
+				bottom: 0px
+				left: 0
+				transition: all .3s ease
+				display: block
+				height: 1px
+				width: 0
+				background-color: #fff
+				position: absolute
+			&:hover
+				color: #fff
+				&:after
+					width: 100px
+.btn
+	display: inline-block
+	padding: 10px 15px
+	font-weight: 500
+	border-radius: 5px
+	text-align: center
+	color: #fff
+	font-size: 16px
+	border: 1px solid $accent
+	background-color: $accent
+	transition: all .3s ease
+	&:hover
+		background-color: transparent
+		color: $accent
+		text-decoration: none
+.banner_img
+	width: 100%
+	min-height: 75vh
