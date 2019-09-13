@@ -3,7 +3,7 @@
 @import libs
 
 ::placeholder
-	color: #666
+	color: #b5bccb
 
 ::selection
 	background-color: $accent
@@ -220,3 +220,134 @@ a
 	li
 		margin-bottom: 10px
 		font-size: 18px
+.get_call_label
+	margin: 0 auto 40px
+	width: 100%
+	max-width: 580px
+.contact
+	margin-top: 130px
+.contact_block
+	margin: 0 auto
+	margin-top: 40px
+	border-radius: 8px
+	border: solid 1px #cdd8e3
+	padding: 40px 36px
+	width: 100%
+	max-width: 780px
+.contact_header
+	color: #152b45
+	font-size: 24px
+	font-weight: 500
+	margin: 0
+	margin-bottom: 8px
+.contact_label
+	color: #3d4d64
+	font-size: 16px
+	line-height: 24px
+	margin: 0
+	width: 100%
+	max-width: 485px
+.phone_links
+	margin-top: 25px
+.phone_link
+	font-size: 24px
+	line-height: 28px
+	color: #152b45
+	font-weight: 300
+	position: relative
+	flex-grow: 1
+	padding-left: 50px
+	&:before
+		content: ''
+		left: 0
+		position: absolute
+		display: inline-block
+		border-radius: 50%
+		top: -4px
+		width: 36px
+		height: 36px
+		background-color: $accent
+		background-size: 24px 24px
+		background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAAAXNSR0IArs4c6QAABWJJREFUeAHtmmuIVVUUx+817aFm2bu0NCOJwLLAHoQ1TRRZQYERRZlhJCSB9SUICvrShz5ERIERVJ/qW0WSQe9BwVLKog+9DKa3D9I0s5hKb781nnNZLde5c+525s4+h73gz95r7bXP2f//7LPPPvtOo5EsKZAUSAokBZICSYGkQFIgKZAUSAokBXqtQHOsb9hqtU7kHnPB2Vm5pdlsPj3W9x2t64+KQIgwTQmgxRBRjjWDHUSgOSYWrdu1QIhxHmwWAS3EyV0ynIVIP3TZpxrpCPQQOFRbWg22jcaEgIHuCuhju/TZQKx+iEDbuiCzldy1oGX69Bk/WndiwMh+dvqIEO+CbzJsptzMOrOHssHz+BnF+VLPbDYxWYe+zwO1KSE201mAVnciSP6TTp9KrEMhj5jMlv1GkDnGt+6ADeD3ObF6hJgNX5sZ8S/+UUXsaJsO9pk+g0X5McVDZpCMf5MhcRj+fBNru6w1v+F83g4cqAyvQyYWnRsq0CcOkwudmA4NaCerX+nEogqNpkD9IzAbcNplNx61hQq0EVZDhtnVrDGHm5h2d2snq091YlGFggRiTdkLiw8Mk6PxF5qYdr3ZImtT1BYkUMZojcPsJieWh27NK6pcp+r1qvI4nWle2+LuBEdapsROB/uBtt9xCrcG9hrj5QfPIB4z2cdsMAOfjr/YxMS9HdijlVe4xl9Obn1CzIC79ZTI6gOWIfEvnLx+m1c7H9JTgDwq1i7NydIwwzZm/v15Tq1LyD7rCPCWJk37y07On8TO0Xm1rEPyLPCPI4CeRcfTvsXJ2UAs5MilWlpC8kWH/Hpi7YWZ+g1OjoSeqxbbgNFCsmgWLdeXI+95UcSxh3VeLeuQ9tYi2RedlBOmPg18Bzy7M8+rZQljOfPZ7jB/TROmfR7Y7eT9TewWnVu7OgSXOMQl9L9XOn4/EEGsyW77gdoJowlB8D3LGl/EuMjk3UHMfn7kXeUMO3iXr+8TXR1i8t31a85UlT9Jmx4w/oOq3VZXE5Df9duG3wRXgCfARiDbhPeBCHozOK2dHHOFgV4HvNkhnxzH6bHj3wPkTNuzbQRvBLJjvxd8BUayQRJeAivAfCDHwfEZA3sceCb7o8l6xPjXgz+85Cy2p0PbSE3yKfQOeBQUnpvr8fSkzmAmgjXAsw8J2pm0gJjMmLG0x3pCvuxNYDoZfFTAWB43uybNJCZ/7bK2r2xilrei7Nh7lsfA5DvsywIiPxK3bzdZiO8Dewv6bCUuj8ssMCErb6N8BmwCResZTa1OJ5490+SgGzEwmRlFIg3RttJ2IjYX6Nkn5JeCI2yu9mmfCq4Cui/usC3QuVHVGZ7MJG/QB4bear1Kxb7WZYYsA5d3S4Y+bwBrM7q9Tk/zGa2sSW/aUSt/J/XloH0KEDpArvGpuq5UZb2K85WvSTJIebvJFsDbJxEeNtkKtM+TdP+ydfrbN+IvZftGkQcB2fvsAJ3sbRov63bA9JkE7B/g426vM+75kJDPEvlUGMnWkrAElPqZiLwznAu+Pu6EQweQkd/ukLKhXQRWgWtA4duMtkuAtVWh44uiH2zkPEkO3bzzbUtWfNknyZtqJVgI5H+1h436YmDtkby90iWs5Pj2BVBWqFwIWXO+BfKWlE8Za8sqLYwdPOzkp215nLzf3Sz5Mv619h618GEue6e7wLoyKnTImRciyCFvyEJuGtoH8rPpuyiD/HQ9BZS1E/hfgB1lk/O8SgmUD1pKxJK32MXgggxy1nMumASsDSHOQf91YpM8v7ICeWQQTc6x5XvuVHBKhmMoGwj0lJTJkgJJgaRAUiApkBRICiQFkgJJgaRAUiB+Bf4DY/Bjd19VfiYAAAAASUVORK5CYII=')
+		background-position: center
+		background-repeat: no-repeat
+	&:hover
+		text-decoration: none
+		color: $accent
+.success
+		position: absolute
+		display: none
+		top: 0
+		right: 0
+		left: 0
+		bottom: 0
+		background-color: rgba(255,255,255,.7)
+		z-index: 2
+		.success_text
+			display: block
+			position: absolute
+			top: 50%
+			left: 50%
+			font-size: 24px
+			transform: translate(-50%,-50%)
+		.close_succes
+			color: #000
+			position: absolute
+			width: 25px
+			height: 25px
+			top: 20px
+			left: 20px
+			cursor: pointer
+			&:before,&:after
+				content: ''
+				width: 100%
+				height: 3px
+				background-color: #000
+				display: block
+				transform-origin: 10px 2px
+			&:before
+				transform: rotate(45deg)
+			&:after
+				transform: rotate(-45deg)
+.callback
+	width: 100%
+	margin-top: 30px
+	display: flex
+	flex-wrap: wrap
+	position: relative
+	label
+		display: block
+		color: #3d4d64
+		line-height: 20px
+		font-size: 14px
+		font-weight: bold
+		margin-bottom: 8px
+	input
+		width: 100%
+		max-width: 340px
+		border-radius: 8px
+		background-color: #f2f5f7
+		outline: none
+		border: none
+		height: 40px
+		line-height: 40px
+		font-size: 14px
+		padding: 10px 15px
+		color: #3d4d64
+		margin-bottom: 20px
+	textarea
+		width: 100%
+		max-width: 340px
+		border-radius: 8px
+		background-color: #f2f5f7
+		outline: none
+		border: none
+		font-size: 14px
+		padding: 10px 15px
+		color: #3d4d64
+		resize: none
+		height: 215px
+.fg1
+	flex-grow: 1
+.input_wrapper,.text_area
+	width: 50%
